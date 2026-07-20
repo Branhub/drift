@@ -19,8 +19,10 @@ import io.airlift.drift.annotations.ThriftEnum;
 import io.airlift.drift.annotations.ThriftEnumValue;
 
 @ThriftEnum
-public enum GenericReturnValueEnum implements GenericReturnValue<Integer> {
-    GENERIC_RETURN_VALUE_ENUMValueEnum(1);
+public enum GenericReturnValueEnum
+        implements GenericReturnValue<Integer>
+{
+    GENERIC_RETURN_VALUE_ENUM(1);
 
     private final Integer enumValue;
 

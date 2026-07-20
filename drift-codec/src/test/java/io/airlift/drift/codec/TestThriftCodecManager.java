@@ -195,10 +195,11 @@ public class TestThriftCodecManager
     }
 
     @Test
-    private void testGenericReturnValueEnum() throws Exception
+    public void testGenericReturnValueEnum()
+            throws Exception
     {
         ThriftEnumMetadata<GenericReturnValueEnum> enumMetadata = thriftEnumMetadata(GenericReturnValueEnum.class);
-        testRoundTripSerialize(enumType(enumMetadata), GenericReturnValueEnum.GENERIC_RETURN_VALUE_ENUMValueEnum);
+        testRoundTripSerialize(enumType(enumMetadata), GenericReturnValueEnum.GENERIC_RETURN_VALUE_ENUM);
         testRoundTripSerialize(list(enumType(enumMetadata)), ImmutableList.copyOf(GenericReturnValueEnum.values()));
     }
 
